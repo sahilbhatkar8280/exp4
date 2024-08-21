@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'javac Hello.java'
+            }
+        }
+        stage('world') {
+            steps {
+                echo 'java Hello'
+            }
+        }
+    }
+}
